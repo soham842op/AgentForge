@@ -2,7 +2,7 @@ import os
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_community.utilities import WikipediaAPIWrapper
 
-os.environ["GOOGLE_API_KEY"] = "AIzaSyDYov5wvm-1yV_fSWA7uk5qHczydoideTw"
+os.environ["GOOGLE_API_KEY"] = os.getenv("GOOGLE_API_KEY")
 
 # Load Gemini LLM
 llm = ChatGoogleGenerativeAI(model="gemini-1.5-flash", temperature=0.3)
