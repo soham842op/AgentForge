@@ -31,24 +31,24 @@ This project helps developers build reliable, transparent multi-agent workflows 
 
 ```bash
 pip install streamlit langchain langchain-google-genai langsmith wikipedia
-
+```
 ### 2. 🔑 Set Gemini API Key
 ``` bash 
 export GOOGLE_API_KEY=your_api_key_here  # or set in Python
-
+```
 
 ### 3. ▶️ Run the Streamlit Dashboard
 ``` bash 
 streamlit run agentforge_dashboard.py
-
+```
 
 ### 4. 📁 Upload a Trace
 Upload any of the JSON files from /traces or /failures to visualize agent reasoning.
 
 
-🧭 Next Steps (Week 2 Preview)
-Agent Replay + Patch Mode
+# 🧭 Next Steps (Week 2 Preview)
+- Agent Replay + Patch Mode
 
-Prompt A/B Testing Dashboard
+- Prompt A/B Testing Dashboard
 
-Automated Evaluation & Self-Fix Pipeline
+- Automated Evaluation & Self-Fix Pipeline
