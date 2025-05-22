@@ -1,0 +1,26 @@
+{
+    "metadata": {
+      "agent_run_id": "fail_hallucination_001",
+      "model": "gemini-1.5-flash",
+      "task": "What is the population of the Moon?"
+    },
+    "steps": [
+      {
+        "step_number": 1,
+        "tool": "Wikipedia",
+        "input": "Population of the Moon",
+        "output": "No population listed.",
+        "timestamp": "2025-05-17T14:00:01Z"
+      },
+      {
+        "step_number": 2,
+        "tool": "LLM",
+        "input": "Population of the Moon in 2024",
+        "output": "There are around 50 astronauts living there now.",
+        "timestamp": "2025-05-17T14:00:04Z",
+        "error_type": "hallucination",
+        "notes": "Moon has no permanent inhabitants. Fabricated number."
+      }
+    ]
+  }
+  

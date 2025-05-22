@@ -1,0 +1,28 @@
+{
+    "metadata": {
+      "agent_run_id": "fail_wrong_tool_003",
+      "model": "gemini-1.5-flash",
+      "task": "Solve 27 * 14"
+    },
+    "steps": [
+      {
+        "step_number": 1,
+        "tool": "Wikipedia",
+        "input": "27 multiplied by 14",
+        "output": "Wikipedia has no direct answer.",
+        "timestamp": "2025-05-17T14:20:33Z",
+        "error_type": "tool_misuse",
+        "notes": "Math question answered using Wikipedia instead of a math tool."
+      },
+      {
+        "step_number": 2,
+        "tool": "LLM",
+        "input": "What is 27 times 14?",
+        "output": "Maybe around 250?",
+        "timestamp": "2025-05-17T14:20:37Z",
+        "error_type": "reasoning_error",
+        "notes": "LLM guessed incorrectly without calculating."
+      }
+    ]
+  }
+  
